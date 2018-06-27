@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ohm Dome</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="/Scripts/angular.js"></script>
+    <script src="/Scripts/OhmDome.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <link href="~/Content/OhmDome.css" rel="stylesheet" />
+    <script type="text/javascript">
+    var bandColors = @Html.Raw(Json.Encode(Model));
+    </script>
+</head>
+<body ng-app="myNgApp">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <h1 style="color:wheat">Ohm dome</h1>               
+            </div>            
+        </div>
+    </div>  
+        
+    
+    <div ng-controller="myController" ng-init="load()"  class="ohm-div">
+        
+        <div class="ohm-div-Second-Level"><h3>Go ahead and click on the resistor bands to see the ohm value.</h3></div>
+
+        <object data="Images/resistor.svg" type="image/svg+xml"
+                id="Ohm-alphasvg" style="width: auto; height: 500px; cursor: pointer;"></object>
+
+
+        <div class="ohm-div-message-block">The ohm value for this resistor is <span>{{OhmValue}}</span></div>
+
+
+        <!--<div id="Ohm-colorPalette" ng-model="SelectedColor">-->
+        <div id="Ohm-Color-Palette-Band-A" style="visibility: hidden; cursor: pointer; position: absolute; top: 50px;transition-duration:300ms; " class="Palette">
+            <div ng-repeat="item in BandAPalette" ng-click="SetColor($event)" style="float: left; " class="{{item}}">
+                <svg width="60" height="100">
+                    <rect x="5" y="0" rx="5" ry="5" width="50" height="100"
+                          style="stroke:white;stroke-width:5;opacity:1" fill="{{item}}" />
+                </svg>
+            </div>
+        </div>
+        
+        <div id="Ohm-Color-Palette-Band-B" style="visibility: hidden; cursor: pointer; position: absolute; top: 50px;transition-duration:300ms; " class="Palette">
+            <div ng-repeat="item in BandBPalette" ng-click="SetColor($event)" style="float: left; " class="{{item}}">
+                <svg width="60" height="100">
+                    <rect x="5" y="0" rx="5" ry="5" width="50" height="100"
+                          style="stroke:white;stroke-width:5;opacity:1" fill="{{item}}" />
+                </svg>
+            </div>
+        </div>
+
+        <div id="Ohm-Color-Palette-Band-C" style="visibility: hidden; cursor: pointer; position: absolute; top: 50px;transition-duration:300ms; " class="Palette">
+            <div ng-repeat="item in BandCPalette" ng-click="SetColor($event)" style="float: left; " class="{{item}}">
+                <svg width="60" height="100">
+                    <rect x="5" y="0" rx="5" ry="5" width="50" height="100"
+                          style="stroke:white;stroke-width:5;opacity:1" fill="{{item}}" />
+                </svg>
+            </div>
+        </div>
+
+        <div id="Ohm-Color-Palette-Band-D" style="visibility: hidden; cursor: pointer; position: absolute; top: 50px;transition-duration:300ms; " class="Palette">
+            <div ng-repeat="item in BandDPalette" ng-click="SetColor($event)" style="float: left; " class="{{item}}">
+                <svg width="60" height="100">
+                    <rect x="5" y="0" rx="5" ry="5" width="50" height="100"
+                          style="stroke:white;stroke-width:5;opacity:1" fill="{{item}}" />
+                </svg>
+            </div>
+        </div>
+        <!--</div>-->
+    </div>
+</body>
+</html>

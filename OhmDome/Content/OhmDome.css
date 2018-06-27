@@ -1,0 +1,37 @@
+﻿body{
+    background: beige;
+}
+h1{
+    font-weight:800;
+}
+.navbar-inverse {
+    background-color: #32325d;
+    border-color: #32325d;
+}
+
+.ohm-div {
+    height:auto;width:100%;
+}
+
+.ohm-div-Second-Level {
+    padding-top:20px;
+}
+
+.ohm-div-message-block {
+        position: absolute;
+    top: 500px;
+    left: 38%;
+    height: 50px;
+    background: #32325d;
+    padding: 10px;
+    color: white;
+    width: 330Px;
+
+    .ohm-div-message-block Span {
+        font-size:large;
+
+    }
+
+    footer{
+        display:none;
+    }

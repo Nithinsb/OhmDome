@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OhmDomeDB>
+  <BandA>
+    
+    <ColorCode Color="Brown">
+      1
+    </ColorCode>
+    <ColorCode Color="Red">
+      2
+    </ColorCode>
+    <ColorCode Color="Orange">
+      3
+    </ColorCode>
+    <ColorCode Color="Yellow">
+      4
+    </ColorCode>
+    <ColorCode Color="Green">
+      5
+    </ColorCode>
+    <ColorCode Color="Blue">
+      6
+    </ColorCode>
+    <ColorCode Color="Violet">
+      7
+    </ColorCode>
+    <ColorCode Color="Grey">
+      8
+    </ColorCode>
+    <ColorCode Color="White">
+      9
+    </ColorCode>
+  </BandA>
+  <BandB>
+    <ColorCode Color="Black">
+      0
+    </ColorCode>
+    <ColorCode Color="Brown">
+      1
+    </ColorCode>
+    <ColorCode Color="Red">
+      2
+    </ColorCode>
+    <ColorCode Color="Orange">
+      3
+    </ColorCode>
+    <ColorCode Color="Yellow">
+      4
+    </ColorCode>
+    <ColorCode Color="Green">
+      5
+    </ColorCode>
+    <ColorCode Color="Blue">
+      6
+    </ColorCode>
+    <ColorCode Color="Violet">
+      7
+    </ColorCode>
+    <ColorCode Color="Grey">
+      8
+    </ColorCode>
+    <ColorCode Color="White">
+      9
+    </ColorCode>
+  </BandB>
+  <Multiplier>
+    <ColorCode Color="Black">
+      1
+    </ColorCode>
+    <ColorCode Color="Brown">
+      10
+    </ColorCode>
+    <ColorCode Color="Red">
+      100
+    </ColorCode>
+    <ColorCode Color="Orange">
+      1000
+    </ColorCode>
+    <ColorCode Color="Yellow">
+      10000
+    </ColorCode>
+    <ColorCode Color="Green">
+      100000
+    </ColorCode>
+    <ColorCode Color="Blue">
+      1000000
+    </ColorCode>
+    <ColorCode Color="Violet">
+      10000000
+    </ColorCode>
+    <ColorCode Color="Gray">
+      100000000
+    </ColorCode>
+    <ColorCode Color="White">
+      1000000000
+    </ColorCode>
+    <ColorCode Color="Gold">
+      0.1
+    </ColorCode>
+    <ColorCode Color="Silver">
+      0.01
+    </ColorCode>
+  </Multiplier>
+
+  <Tolerance unit="Percentage">
+    <ColorCode Color="Brown">
+      1
+    </ColorCode>
+    <ColorCode Color="Red">
+      2
+    </ColorCode>
+    <ColorCode Color="Green">
+      0.5
+    </ColorCode>
+    <ColorCode Color="Blue">
+      0.25
+    </ColorCode>
+    <ColorCode Color="Violet">
+      0.1
+    </ColorCode>
+    <ColorCode Color="Grey">
+      0.05
+    </ColorCode>
+    <ColorCode Color="Gold">
+      5
+    </ColorCode>
+    <ColorCode Color="Silver">
+      10
+    </ColorCode>
+  </Tolerance>
+</OhmDomeDB>
